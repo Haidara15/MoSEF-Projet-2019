@@ -10,3 +10,7 @@ echo $nom_repertoire
 #Afficher tous les fichiers dont le nom respecte un pattern fourni en paramètre
 ls $nom_repertoire/$1
 
+# Les fichiers qui contiennent un deuxième pattern fourni en paramètre
+
+grep -il $2 $nom_repertoire/$1
+
