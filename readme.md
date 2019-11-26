@@ -1,6 +1,6 @@
-#Déroulé du projet intitulé : MoSEF-Projet-2019
+# Déroulé du projet intitulé : MoSEF-Projet-2019
 
-##Organisation et contexte
+## Organisation et contexte
 
 Ce travail est réalisé dans le cadre du projet individuel de Linux. il est destiné à évaluer les connaissances acquises dans cours et la compréhension des concepts de base de ce langage. Pour réaliser ce projet, considérons deux grandes parties
 
