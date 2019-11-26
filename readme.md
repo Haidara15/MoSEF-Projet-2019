@@ -1,0 +1,34 @@
+#Déroulé du projet intitulé : MoSEF-Projet-2019
+
+##Organisation et contexte
+
+Ce travail est réalisé dans le cadre du projet individuel de Linux. il est destiné à évaluer les connaissances acquises dans cours et la compréhension des concepts de base de ce langage. Pour réaliser ce projet, considérons deux grandes parties
+
+### Partie I:
+
+Dans un premier temps, nous avons crées le script **search-fichiers.sh** pour qu'il effectue les tâches suivantes: 
+- Annonce le moment de sont exécution. 
+- Souhaite la bienvenue à l'utilisateur qui l'a tapé et lui demande de taper le chemin d'un répertoire et de l'afficher. 
+pour cela, nous avons utilisés le code suivant : 
+``` 
+la_date_du_jour=$(date +'%d %B %Y') 
+echo "Bienvenu $USERNAME, nous sommes le" $la_date_du_jour
+read -p "Quel repertoire vous intérersse aujourd'hui ? " nom_repertoire
+echo $nom_repertoir
+
+``` 
+Pour l'éxécution on entre la commande : ` bash search_fichiers.sh ` puis on saisit le nom du repertoire souhaité.
+
+Ensuite, nous avons utilisé la fonction **commit** pour commiter le fichier dans le dépôt local avant de pousser les modifications dans le dépôt distant via la fonction** git push -u master**.
+
+### Partie II:
+
+Dans cette seconde partie, il était question d'éditer un script pour qu'il affiche tous les fichiers dont le nom respecte un pattern fourni en paramètre pour cela nous avons crée une nouvelle branche **cherif** sur laquelle on s'est placé pour ajouter au script précédent le code suivant: `ls $nom_repertoire/$1` . Pour exécuter le fichier, je me suis placé dans le repertoire *bin*, j'ai sasit la commande: **/bin/*.exe**, elle m'a retournée tous les fichiers avec une extension *.exe* se trouvant dans ce répertoirie. Pour aller plus loin, nous avons ajouté au script précédent une autre condition (` grep -il $2 $nom_repertoire/$1 `) permettant d'afficher uniquement les fichiers qui contiennent un deuxième pattern fourini en paramètre. la fonction *grep* va permettre de trier les fichiers du repertoire saisi par rapport à ce qu'ils contiennent et *i* permet de rendre le pattern insensible à la casse (qu'il saisi en majuscule ou en minuscule, il retourne le fichier qui le contient). Ainsi en entrant la commande `./search_fichiers *.txt bonjour` il me retourne tous les fichiers d'extension *.txt* contenant le mot bonjour. 
+
+Une fois ce travail terminé nous avons poussés les changement dans le dépôt distant avant de supprimer le fichier *Consignes.md* grâce à la commande `rm Consignes.md`. 
+
+
+
+
+
+
