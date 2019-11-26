@@ -8,7 +8,7 @@ Ce travail est réalisé dans le cadre du projet individuel de linux. il a pour 
 
 Dans un premier temps, nous avons crées le script **search-fichiers.sh** pour qu'il effectue les tâches suivantes: 
 - Annonce le moment de sont exécution. 
-- Souhaite la bienvenue à l'utilisateur qui l'a tapé et lui demande de taper le chemin d'un répertoire et l'afficher. 
+- Souhaite la bienvenue à l'utilisateur qui l'a tapé et lui demande de taper le chemin d'un répertoire et l'affiche. 
 pour cela, nous avons utilisés le code suivant : 
 ``` 
 la_date_du_jour=$(date +'%d %B %Y') 
