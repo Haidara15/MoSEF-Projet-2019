@@ -2,7 +2,7 @@
 
 ## Organisation et contexte
 
-Ce travail est réalisé dans le cadre du projet individuel de Linux. il est destiné à évaluer les connaissances acquises dans cours et la compréhension des concepts de base de ce langage. Pour réaliser ce projet, considérons deux grandes parties
+Ce travail est réalisé dans le cadre du projet individuel de linux. il a pour object d'évaluer la connaissance et la compréhension des concepts de base de ce langage. Pour réaliser ce projet, considérons deux grandes parties
 
 ### Partie I:
 
