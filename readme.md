@@ -19,7 +19,7 @@ echo $nom_repertoir
 ``` 
 Pour l'éxécution, on entre la commande : ` bash search_fichiers.sh ` puis on saisit le nom du repertoire souhaité.
 
-Ensuite, nous avons utilisé la fonction **commit** pour commiter le fichier dans le dépôt local avant de pousser les modifications dans le dépôt distant via la fonction**git push -u master**.
+Ensuite, nous avons utilisé la fonction **commit** pour commiter le fichier dans le dépôt local avant de pousser les modifications dans le dépôt distant via la fonction **git push -u master**.
 
 ### Partie II:
 
