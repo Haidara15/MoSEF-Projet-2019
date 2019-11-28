@@ -27,7 +27,7 @@ Ensuite, nous avons utilisé la fonction **commit** pour commiter le fichier dan
 
 Dans cette seconde partie, il était question d'éditer un script pour qu'il affiche tous les fichiers dont le nom respecte un pattern fourni en paramètre pour cela nous avons crées une nouvelle branche **cherif** sur laquelle on s'est placé pour ajouter au script précédent la ligne suivante: `ls $nom_repertoire/$1` . Pour exécuter le fichier, je me suis placé dans le repertoire **bin**, j'ai sasit la commande: **/bin/*.exe**, elle m'a retournée tous les fichiers avec une extension **.exe** se trouvant dans ce répertoirie (voir image ci-dessous) 
 
-![Fichiers extension exe](https://www.cjoint.com/doc/19_11/IKCk66MPKEB_execution-1.PNGi)
+![Fichiers extension exe](https://www.cjoint.com/doc/19_11/IKClsK2VtMB_execution-1.PNG)
 
 
 Pour aller plus loin et rendre la recherche plus précise, nous avons ajouté au scriptprécédent une autre condition (` grep -il $2 $nom_repertoire/$1 `). Cette condition permet d'afficher uniquement les fichiers qui contiennent un deuxième pattern fourini en paramètre. la fonction **grep** va permettre de trier les fichiers du repertoire par rapport à ce qu'ils contiennent et **i** permet de rendre le pattern insensible à la casse (qu'il soit en majuscule ou en minuscule, il retourne le fichier qui le contient). Ainsi en entrant la commande `/bin/*.exe H*` il m'a retourné tous les fichiers d'extension *.exe* contenant des mots commençant par H. (voir image ci-dessous)
